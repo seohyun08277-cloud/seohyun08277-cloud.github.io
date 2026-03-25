@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Magazine 2 | Mood Outfit Finder</title>
+  <link rel="icon" type="image/x-icon" href="../img/angel.png" />
+  <link rel="stylesheet" href="css.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+
+  <div class="page-transition"></div>
+
+<!-- TOP NAV -->
+<header class="topnav">
+  <div class="topnav-inner">
+    <a href="../index.html" class="brand">Mood Outfit Finder</a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../outfit archive.html">Outfit Archive</a>
+      <a class="active" href="../items.html">Items</a>
+      <a href="../fashion magazine archive.html">Fashion Magazine Archive</a>
+    </nav>
+
+    <span class="openbtn" onclick="openNav()">☰</span>
+  </div>
+</header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Q & A</a>
+  </div>
+
+  <section class="magazine-detail">
+    <div class="magazine-detail-grid">
+
+      <div class="magazine-detail-cover">
+        <img src="../img/magazine4.jpeg" alt="Harper's Bazaar archive issue cover" />
+      </div>
+
+      <div class="magazine-detail-info">
+        <p class="magazine-detail-tag">fashion magazine</p>
+        <h1 class="magazine-detail-title">Harper's Bazaar archive issue</h1>
+        <p class="magazine-detail-publisher">publisher: Harper's Bazaar</p>
+        <p class="magazine-detail-year">year: 2015</p>
+
+        <p class="magazine-detail-desc">
+          A fashion magazine issue focused on contemporary editorial styling,
+          seasonal silhouettes, and visual storytelling through photography,
+          typography, and layout. This issue reflects a refined minimalist mood
+          that connects well with the visual direction of Mood Outfit Finder.
+        </p>
+
+        <div class="magazine-detail-links">
+          <a href="fashion magazine archive.html">back to archive</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="magazine-pdf-section">
+  <div class="reader-stage">
+
+    <div class="reader-top-line"></div>
+
+    <div class="pdf-display-wrap spread-view cover-spread-view">
+        <canvas id="pdfCanvasLeft"></canvas>
+        <canvas id="pdfCanvasRight"></canvas>
+    </div>
+
+    <div class="reader-toolbar">
+      <div class="reader-toolbar-left">
+        <button id="zoomOutBtn" class="reader-btn" aria-label="Zoom out">−</button>
+        <button id="zoomInBtn" class="reader-btn" aria-label="Zoom in">+</button>
+      </div>
+
+      <div class="reader-toolbar-center">
+        <button id="prevPage" class="reader-btn" aria-label="Previous page">‹</button>
+        <span class="reader-page-indicator">
+          <span id="pageNum">1</span> of <span id="pageCount">1</span>
+        </span>
+        <button id="nextPage" class="reader-btn" aria-label="Next page">›</button>
+      </div>
+
+      <div class="reader-toolbar-right">
+        <button id="fullscreenBtn" class="reader-btn" aria-label="Fullscreen">⛶</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="related-magazines-section">
+    <div class="container">
+      <h2 class="related-magazines-title">related magazines</h2>
+
+      <div class="magazine-grid">
+        <a class="magazine-card" href="magazine1.html">
+          <div class="magazine-img">
+            <img src="../img/magazine4.jpeg" alt="Harper's Bazaar issue" />
+          </div>
+          <div class="magazine-meta">
+            <span class="magazine-tag">fashion magazine</span>
+            <p class="magazine-name">harper's bazaar issue</p>
+            <p class="magazine-issue">2021</p>
+          </div>
+        </a>
+
+        <a class="magazine-card" href="magazine2.html">
+          <div class="magazine-img">
+            <img src="../img/magazine2.jpeg" alt="Dazed issue" />
+          </div>
+          <div class="magazine-meta">
+            <span class="magazine-tag">fashion magazine</span>
+            <p class="magazine-name">dazed issue</p>
+            <p class="magazine-issue">2023</p>
+          </div>
+        </a>
+
+        <a class="magazine-card" href="magazine-detail-4.html">
+          <div class="magazine-img">
+            <img src="img/magazine4.jpg" alt="i-D issue" />
+          </div>
+          <div class="magazine-meta">
+            <span class="magazine-tag">fashion magazine</span>
+            <p class="magazine-name">i-d issue</p>
+            <p class="magazine-issue">2020</p>
+          </div>
+        </a>
+
+        <a class="magazine-card" href="magazine-detail-5.html">
+          <div class="magazine-img">
+            <img src="img/magazine5.jpg" alt="W issue" />
+          </div>
+          <div class="magazine-meta">
+            <span class="magazine-tag">fashion magazine</span>
+            <p class="magazine-name">w issue</p>
+            <p class="magazine-issue">2019</p>
+          </div>
+        </a>
+      </div>
+    </div>
+</section>
+
+<footer class="footer-5-column">
+    <div class="footer-container">
+      <div class="footer-navbar-container">
+        <div class="footer-company-details">
+          <div class="footer-content">
+            <p>Mood Outfit Finder curates outfits and fashion pieces for your everyday mood.</p>
+          </div>
+        </div>
+
+        <div class="footer-navbar">
+          <div class="footer-navbar-col">
+            <h5>Archive</h5>
+            <ul>
+              <li><a href="outfit archive.html">Outfit archive</a></li>
+              <li><a href="items.html">Items</a></li>
+              <li><a href="fashion magazine archive.html">Fashion magazine archive</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-navbar-col">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="q & a.html">FAQ</a></li>
+              <li><a href="support.html">Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-navbar-col">
+            <h5>About</h5>
+            <ul>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="service.html">Services</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2026 Mood Outfit Finder — All Rights Reserved. Designed by Seohyun.</p>
+      </div>
+    </div>
+</footer>
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+</script>
+
+<script>
+  const pdfUrl = "../pdf/Harper's_Bazaar_Korea_November_2025.pdf";
+
+  let pdfDoc = null;
+  let currentViewStart = 1;
+  let scale = 0.75;
+  let isRendering = false;
+  let pendingViewStart = null;
+
+  const canvasLeft = document.getElementById("pdfCanvasLeft");
+  const canvasRight = document.getElementById("pdfCanvasRight");
+  const ctxLeft = canvasLeft.getContext("2d");
+  const ctxRight = canvasRight.getContext("2d");
+
+  const spreadWrap = document.querySelector(".cover-spread-view");
+
+  const pageNumEl = document.getElementById("pageNum");
+  const pageCountEl = document.getElementById("pageCount");
+  const prevBtn = document.getElementById("prevPage");
+  const nextBtn = document.getElementById("nextPage");
+  const zoomInBtn = document.getElementById("zoomInBtn");
+  const zoomOutBtn = document.getElementById("zoomOutBtn");
+  const fullscreenBtn = document.getElementById("fullscreenBtn");
+
+  pdfjsLib.getDocument(pdfUrl).promise.then((pdf) => {
+    pdfDoc = pdf;
+    pageCountEl.textContent = pdf.numPages;
+    renderCurrentView();
+  }).catch((error) => {
+    console.error("PDF load error:", error);
+  });
+
+  async function renderPageToCanvas(pageNumber, canvas, ctx) {
+    if (pageNumber > pdfDoc.numPages) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      canvas.width = 1;
+      canvas.height = 1;
+      return;
+    }
+
+    const page = await pdfDoc.getPage(pageNumber);
+    const viewport = page.getViewport({ scale });
+
+    canvas.width = viewport.width;
+    canvas.height = viewport.height;
+
+    await page.render({
+      canvasContext: ctx,
+      viewport: viewport
+    }).promise;
+  }
+
+  async function renderCurrentView() {
+    isRendering = true;
+
+    const isCover = currentViewStart === 1;
+
+    if (isCover) {
+      spreadWrap.classList.add("is-cover");
+
+      await renderPageToCanvas(1, canvasLeft, ctxLeft);
+
+      ctxRight.clearRect(0, 0, canvasRight.width, canvasRight.height);
+      canvasRight.width = 1;
+      canvasRight.height = 1;
+
+      pageNumEl.textContent = "1";
+    } else {
+      spreadWrap.classList.remove("is-cover");
+
+      const leftPage = currentViewStart;
+      const rightPage = currentViewStart + 1;
+
+      await Promise.all([
+        renderPageToCanvas(leftPage, canvasLeft, ctxLeft),
+        renderPageToCanvas(rightPage, canvasRight, ctxRight)
+      ]);
+
+      pageNumEl.textContent = `${leftPage}–${Math.min(rightPage, pdfDoc.numPages)}`;
+    }
+
+    isRendering = false;
+
+    if (pendingViewStart !== null) {
+      const nextView = pendingViewStart;
+      pendingViewStart = null;
+      currentViewStart = nextView;
+      renderCurrentView();
+    }
+  }
+
+  function queueRenderView(viewStart) {
+    if (isRendering) {
+      pendingViewStart = viewStart;
+    } else {
+      currentViewStart = viewStart;
+      renderCurrentView();
+    }
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (!pdfDoc) return;
+
+    if (currentViewStart === 1) return;
+
+    if (currentViewStart === 2) {
+      queueRenderView(1);
+    } else {
+      queueRenderView(Math.max(2, currentViewStart - 2));
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (!pdfDoc) return;
+
+    if (currentViewStart === 1) {
+      if (pdfDoc.numPages >= 2) {
+        queueRenderView(2);
+      }
+      return;
+    }
+
+    const nextStart = currentViewStart + 2;
+    if (nextStart <= pdfDoc.numPages) {
+      queueRenderView(nextStart);
+    }
+  });
+
+  zoomInBtn.addEventListener("click", () => {
+    if (!pdfDoc) return;
+    scale = Math.min(scale + 0.1, 2.2);
+    queueRenderView(currentViewStart);
+  });
+
+  zoomOutBtn.addEventListener("click", () => {
+    if (!pdfDoc) return;
+    scale = Math.max(scale - 0.1, 0.5);
+    queueRenderView(currentViewStart);
+  });
+
+  fullscreenBtn.addEventListener("click", () => {
+    const readerStage = document.querySelector(".reader-stage");
+
+    if (!document.fullscreenElement) {
+      readerStage.requestFullscreen?.();
+    } else {
+      document.exitFullscreen?.();
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soft Layered Styling | Mood Outfit Finder</title>
+  <link rel="icon" type="image/x-icon" href="../img/angel.png" />
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+
+  <div class="page-transition"></div>
+
+<!-- TOP NAV -->
+<header class="topnav">
+  <div class="topnav-inner">
+    <a href="../index.html" class="brand">Mood Outfit Finder</a>
+
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../outfit archive.html">Outfit Archive</a>
+      <a class="active" href="../items.html">Items</a>
+      <a href="../fashion magazine archive.html">Fashion Magazine Archive</a>
+    </nav>
+
+    <span class="openbtn" onclick="openNav()">☰</span>
+  </div>
+</header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Q & A</a>
+  </div>
+
+  <section class="outfit-detail">
+    <div class="outfit-detail-grid">
+
+      <div class="outfit-detail-image">
+        <img src="../img/outfit4.jpeg" alt="Soft layered styling outfit" />
+      </div>
+
+      <div class="outfit-detail-info">
+        <p class="outfit-detail-tag">daily outfit</p>
+        <h1 class="outfit-detail-title">soft layered styling</h1>
+        <p class="outfit-detail-desc">
+          A soft everyday outfit built around layered textures and a clean silhouette.
+          The look combines a relaxed top, structured bottom, and dark accessories for
+          a balanced editorial mood.
+        </p>
+
+        <div class="outfit-detail-list">
+          <h2>Pieces</h2>
+          <ul>
+            <li>Layered knit top</li>
+            <li>Black midi skirt</li>
+            <li>Sharp black boots</li>
+            <li>Minimal tote bag</li>
+            <li>Silver accent accessory</li>
+          </ul>
+        </div>
+
+        <div class="outfit-detail-links">
+          <a href="items.html">view related items</a>
+          <a href="outfit archive.html">back to archive</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="related-looks">
+    <div class="container">
+      <h2 class="related-title">Related looks</h2>
+
+      <div class="archive-grid">
+        <a class="archive-card" href="../outfit3.html">
+          <div class="archive-img">
+            <img src="../img/ourfit3.jpg" alt="Dark structured look" />
+          </div>
+          <div class="archive-meta">
+            <span class="archive-tag">editorial</span>
+            <p class="archive-name">dark structured look</p>
+            <p class="archive-price">sharp tailoring / dark palette</p>
+          </div>
+        </a>
+
+        <a class="archive-card" href="outfit-detail-3.html">
+          <div class="archive-img">
+            <img src="img/look3.jpg" alt="Relaxed monochrome" />
+          </div>
+          <div class="archive-meta">
+            <span class="archive-tag">daily outfit</span>
+            <p class="archive-name">relaxed monochrome</p>
+            <p class="archive-price">easy layering / minimal mood</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer-5-column">
+    <div class="footer-container">
+      <div class="footer-navbar-container">
+        <div class="footer-company-details">
+          <div class="footer-content">
+            <p>Mood Outfit Finder curates outfits and fashion pieces for your everyday mood.</p>
+          </div>
+        </div>
+
+        <div class="footer-navbar">
+          <div class="footer-navbar-col">
+            <h5>Archive</h5>
+            <ul>
+              <li><a href="outfit archive.html">Outfit archive</a></li>
+              <li><a href="items.html">Items</a></li>
+              <li><a href="fashion magazine archive.html">Fashion magazine archive</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-navbar-col">
+            <h5>Support</h5>
+            <ul>
+              <li><a href="q & a.html">FAQ</a></li>
+              <li><a href="support.html">Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-navbar-col">
+            <h5>About</h5>
+            <ul>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="service.html">Services</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2026 Mood Outfit Finder — All Rights Reserved. Designed by Seohyun.</p>
+      </div>
+    </div>
+</footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+  </script>
+</body>
+</html>
