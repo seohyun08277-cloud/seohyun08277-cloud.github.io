@@ -24,18 +24,20 @@
   </div>
 </header>
 
-  <!-- SIDE NAV -->
-  <div id="mySidenav" class="sidenav">
+<!-- SIDE NAV -->
+<div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="about.html">About</a>
     <a href="q & a.html">Q & A</a>
-  </div>
+</div>
 
-  <!-- HERO -->
-  <section class="hero">
+<div id="overlay" class="overlay" onclick="closeNav()"></div>
+
+<!-- HERO -->
+<section class="hero">
     <img src="img/hero5.jpg" alt="Featured outfit" />
     <a class="hero-btn" href="outfit archive.html">featured outfits</a>
-  </section>
+</section>
 
   <!-- INTRO -->
   <section class="section-intro">
@@ -324,12 +326,14 @@
 
 <script>
     function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
+    document.getElementById("mySidenav").classList.add("open");
+    document.getElementById("overlay").classList.add("show");
+  }
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
+  function closeNav() {
+    document.getElementById("mySidenav").classList.remove("open");
+    document.getElementById("overlay").classList.remove("show");
+  }
 
     let currentSlide = 0;
 

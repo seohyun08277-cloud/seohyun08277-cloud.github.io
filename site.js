@@ -1,12 +1,11 @@
-
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("mySidenav").classList.add("open");
+  document.getElementById("overlay").classList.add("show");
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("mySidenav").classList.remove("open");
+  document.getElementById("overlay").classList.remove("show");
 }
 
 let currentSlide = 0;

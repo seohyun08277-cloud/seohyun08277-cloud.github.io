@@ -138,26 +138,33 @@ body {
 
 /* SIDE NAV */
 .sidenav {
-  height: 100%;
-  width: 0;
   position: fixed;
-  z-index: 1000;
   top: 0;
-  left: 0;
-  background-color: rgb(255, 255, 255);
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.4s;
+  right: -320px;
+  left: auto;
+  width: 320px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+  border-right: none;
+  z-index: 2000;
+  padding-top: 80px;
+  transition: left 0.4s ease;
+}
+
+.sidenav.open {
+  right: 0;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #000000;
   display: block;
-  /* border-right: rgba(0, 0, 0, 0.05); */
-  transition: 0.3s;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  transition: color 0.3s ease;
 }
 
 .sidenav a:hover {
@@ -166,9 +173,27 @@ body {
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1500;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 /* BIG IMAGE */
