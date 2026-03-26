@@ -176,13 +176,15 @@
 </footer>
 
 <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
+  function openNav() {
+    document.getElementById("mySidenav").classList.add("open");
+    document.getElementById("overlay").classList.add("show");
+  }
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
+  function closeNav() {
+    document.getElementById("mySidenav").classList.remove("open");
+    document.getElementById("overlay").classList.remove("show");
+  }
 </script>
 </body>
 </html>
