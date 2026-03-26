@@ -1,54 +1,54 @@
-const pdfUrl = "../pdf/British-vogue-june-2021.pdf";
+// const pdfUrl = "../pdf/British-vogue-june-2021.pdf";
 
-let pdfDoc = null;
-let pageNum = 1;
+// let pdfDoc = null;
+// let pageNum = 1;
 
-const canvas = document.getElementById("pdfCanvas");
-const ctx = canvas.getContext("2d");
+// const canvas = document.getElementById("pdfCanvas");
+// const ctx = canvas.getContext("2d");
 
-pdfjsLib.getDocument(url).promise.then(pdf => {
+// pdfjsLib.getDocument(url).promise.then(pdf => {
 
-  pdfDoc = pdf;
-  document.getElementById("pageCount").textContent = pdf.numPages;
+//   pdfDoc = pdf;
+//   document.getElementById("pageCount").textContent = pdf.numPages;
 
-  renderPage(pageNum);
+//   renderPage(pageNum);
 
-});
+// });
 
-function renderPage(num){
+// function renderPage(num){
 
-  pdfDoc.getPage(num).then(page => {
+//   pdfDoc.getPage(num).then(page => {
 
-    const viewport = page.getViewport({scale:1.5});
+//     const viewport = page.getViewport({scale:1.5});
 
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
+//     canvas.height = viewport.height;
+//     canvas.width = viewport.width;
 
-    page.render({
-      canvasContext: ctx,
-      viewport: viewport
-    });
+//     page.render({
+//       canvasContext: ctx,
+//       viewport: viewport
+//     });
 
-    document.getElementById("pageNum").textContent = num;
+//     document.getElementById("pageNum").textContent = num;
 
-  });
+//   });
 
-}
+// }
 
-document.getElementById("prevPage").onclick = () => {
+// document.getElementById("prevPage").onclick = () => {
 
-  if(pageNum <= 1) return;
+//   if(pageNum <= 1) return;
 
-  pageNum--;
-  renderPage(pageNum);
+//   pageNum--;
+//   renderPage(pageNum);
 
-};
+// };
 
-document.getElementById("nextPage").onclick = () => {
+// document.getElementById("nextPage").onclick = () => {
 
-  if(pageNum >= pdfDoc.numPages) return;
+//   if(pageNum >= pdfDoc.numPages) return;
 
-  pageNum++;
-  renderPage(pageNum);
+//   pageNum++;
+//   renderPage(pageNum);
 
-};
+// };
