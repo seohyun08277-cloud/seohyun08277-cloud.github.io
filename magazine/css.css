@@ -1558,3 +1558,13 @@ body.fade-out {
   margin-left: 20px;
   margin-top: 10px;
 }
+
+body {
+  cursor: url("../img/star-4pt-round.svg") 12 12, auto;
+}
+
+a:hover,
+button:hover,
+.editorial-card:hover {
+  cursor: url("../img/star-4pt-round-yellow.svg") 12 12, pointer;
+}
